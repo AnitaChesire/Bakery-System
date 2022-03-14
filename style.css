@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin:0;
+	box-sizing: border-box;
+	
+    
+}
+/* body{
+	background-image: url('marblepinkbackground.jpg');
+	background-size: cover;
+	background-position:center;
+	font-family: sans-serif;
+
+} */
+.about-content
+{
+	padding-top: 20px;
+}
+
+
+#navbar{
+
+    width: 100%;
+    background: #958688;
+    margin-top: 10px;
+}
+#navbar ul{
+    list-style-type: none;
+    text-align: right;
+	
+}
+#navbar ul li{
+    display: inline-block;
+    padding: 20px;
+    color: #000000;
+}
+#navbar ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+
+#loginbox {
+	width:320px;
+	height:500px;
+	background-color: rgb(248, 204, 215);
+	color: rgb(73, 68, 68);
+	top: 20%;
+	left:30%;
+	position: absolute;
+	
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius:20px;
+
+}
+#signinbox {
+	width:320px;
+	height:500px;
+	background-color: rgb(247, 168, 188);
+	color: rgb(73, 68, 68);
+	top: 20%;
+	left:60%;
+	position: absolute;
+
+	box-sizing: border-box;
+	padding: 80px 40px;
+	border-radius:20px;
+	
+}
+.logo{
+	background: #53db3bb4;
+	font:bold;
+	font-family:cursive;
+	font-size: 35px;
+	border-radius:20%;
+	margin-left: 20px;
+	font-style: italic;
+	font-stretch: expanded;
+
+}
+.user{
+	
+	width: 120px;
+	height: 100px;
+	border-radius:50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+#productImage {
+	width:320px;
+	height:400px;
+	background-color: rgb(248, 204, 215);
+	color: rgb(184, 144, 144);
+	top: 70%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius:20px;
+}
+
+.lg-title{
+	font-size: 2.5 rem;
+	text-align: center;
+	margin-right: 500px; 
+	font-family:Arial ;
+	color: rgb(116, 3, 50);
+	margin-top: 50px;
+
+}
+.add-a-product{
+	text-align: center;
+	margin-left: 550px;
+	margin-top: 100px;
+}
+.thecakeproduct{
+	margin-left: 50px;
+	padding: 30px;
+	margin-top: 100px;
+		
+
+}
+.cakeproducts{
+	margin-top: 0;
+	margin-left: 10%;
+}
+.cakeproducts2{
+	margin-top: 30%;
+	margin-left: 10%;
+}
+
+.column{
+	float: left;
+	width:33.33%;
+	
+	
+}
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+	
+}
+.cake-img{
+	border-radius: 20%;
+	border: #000000;
+}
+button[type="button"]
+{
+	border:none;
+	outline:none;
+	height:40px;
+	width: 100px;
+	background:rgb(247, 117, 117);
+	color:rgb(235, 231, 231);
+	font-size:15px;
+	border-radius:10px;
+}
+.btn-cart{
+	height:40px;
+	width: 60px;
+	font-family: 'Gill Sans';
+	color: rgb(44, 41, 41);
+}
+
+/*  Nav Bar dropdown menu  */
+
+.sub-menu-1{
+	display: none;
+}
+.dropdown{
+	float: right;
+	overflow: hidden;
+}
+.dropdown .dropbtn{
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: black;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 19px;
+
+}
+/* hidding dropdown content by default....*/
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #958688;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+
+}
+/* links inside the dropdown..*/
+.dropdown-content a{
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover{
+	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.cakeimg{
+	border-radius: 20%;
+	height: 170px;
+	width: 200px;
+	padding: 10px;
+}
+/*-----Product Card---*/
+.column{
+	box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
+	max-width: 350px;
+	max-height: 50%;
+	text-align: center;
+	border-radius: 5%;
+	
+}
+.card .btn-cart:hover{
+	opacity: 0.7;
+}
+
+  
+  /*   product upload... */
+
+  #category{
+	  width: 150px;
+  }
+
+  /*contact form  */
+  
+  .contact{
+	  text-align: center;
+	  background: rgb(68, 93, 177);
+	  margin-top: 0%;
+	  padding: 20px;
+  }
+  .location{
+	  font-weight: bold;
+  }
+  #contactSubmit{
+	  background-color: rgb(206, 200, 200);
+	  width: 200px;
+	  height: 50px;
+	  text-align: auto;
+	  font-family: sans-serif;
+	  font-size: 16px;
+	  font-weight: bold;
+  }
+  input[type=text2], select, textarea {
+	width: 80%;
+	padding: 12px;  
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: sans-serif;
+	font-size: 16px;
+  }
+  #subject{
+	  margin-left: 5%;
+  }
+  
+  
+  #reportSubmit{
+	background-color: rgb(145, 15, 15);
+	width: 200px;
+	height: 50px;
+	text-align: auto;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+#about{
+	margin-left: 10%;
+	font-weight: bolder;
+	font-size: 20px;
+	font-family: serif;
+}
+.lg-title3{
+	font-size: 2.5 rem;
+	text-align: center;
+	opacity: 0.9; 
+	font-family:serif ;
+	color: rgb(43, 30, 18);
+	margin-top: 50px;
+
+}
+.profileinfo{
+	margin-left: 20%;
+}
+
+/*    PROFILE    */
+
+.tablink {
+	background-color: rgb(173, 151, 151);
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 50%;
+  }
+  
+  .tablink:hover {
+	background-color: rgb(124, 96, 96);
+  }
+  
+  /* Style the tab content (the  height:100% f is for the full page content) */
+  .tabcontent {
+	color: rgb(0, 0, 0);
+	display: none;
+	padding: 100px 20px;
+	height: 100%;
+  }
+  .updateprofile{
+	  text-align: center;
+	  font-size: 20px;
+	  font-family: sans-serif;
+	  padding-top: 16px;
+  }
+  
+  #track{
+	border:none;
+	outline:none;
+	height:30px;
+	width: 70px;
+	background:rgb(73, 69, 69);
+	color:rgb(187, 174, 174);
+	font-size:15px;
+	border-radius:10px;
+	cursor:pointer;
+  }
+  #updateprofilebtn{
+	border:none;
+	outline:none;
+	height:30px;
+	width: 100px;
+	background:rgb(90, 5, 5);
+	color:rgb(241, 235, 235);
+	font-size:17px;
+	font-family: sans-serif;
+	border-radius:10px;
+	cursor:pointer;
+  }
+  
+  
+  /* #myorders {background-color: rgb(161, 148, 148);}
+  
+  #myprofile{background-color: red;}  */
+  #textarea{
+	  width: 20%;
+  }
+
+
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+  }
+  .price {
+	color: grey;
+	font-size: 22px;
+  }
+  
+  .card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: rgb(36, 33, 33);
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+  }
+  
+  .card button:hover {
+	opacity: 0.7;
+  }
+  .aerialimage{
+	width: 1500px;
+  }
+  
+
+  
+  h1{
+	 
+	  padding-left: 37%;
+	  font-family: serif;
+  }
+  /*=------FORGOTTEN PASSWORD----*/
+
+  #forgottenpasswordbox {
+	width:380px;
+	height:450px;
+	background-color: rgb(248, 204, 215);
+	color: rgb(73, 68, 68);
+	top: 50%;
+	left:30%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius:20px;
+	text-align: center;
+	
+}
+.changePassword{
+	margin-left: 0px;
+	margin-right: 120px;
+}
+#team
+{
+	padding-top: 50px;
+	padding-bottom:50px;
+	color:#555;
+	text-align: center;
+}
+.admin-login{
+	margin-left: 0px;
+	font-family: serif;
+	font-size: 30px;
+	text-align: center;
+	margin-right: 100px;
+	
+}
+/*--WELCOME---*/
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #6e856e00;
+    color: white;
+    padding: 12px 20px;
+    border-color: #ff0062;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5%;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ff0062;
+  }
+  .flex{
+    border: 10% solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    align-items: center;
+  }
+  
+  .containerx {
+    border-radius: 5px;
+    background-color: #f8abc9;
+    width: 40%;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .containery {
+    border-radius: 5px;
+    background-color: #f8abc9;
+    width: 30%;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
